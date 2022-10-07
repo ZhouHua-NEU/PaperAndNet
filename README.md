@@ -3,30 +3,55 @@
 
 Thanks for coming to my github repository, which is a repository for my reproduction of the network structure, containing source code, papers, paper pictures, and innovative points of the structure, the directory structure of the repository is as follows:
 
-$====================================================$  
-LeNet5$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$模型名字-The name of model    
-$~~~~~~~~$│$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$│  
-$~~~~~~~~$├─code$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~$├─模型代码-The code of model                     
-$~~~~~~~~$│$~~~~~~$└─datasets$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~$│$~~~~~~$└─模型数据集-The datasets of model                       
-$~~~~~~~~$│$~~~~~~$$~~~~~~$└─mnist_data\ $~~~~~~~~~~~~~$│$~~~~~~$$~~~~~~$└─数据集-The datasets                     
-$~~~~~~~~$│$~~~~~~$$~~~~~~$└─datasets.py$~~~~~~~~~~~~~~~$│$~~~~~~$$~~~~~~$└─加载数据代码-The code of loading datasets                                         
-$~~~~~~~~$│$~~~~~~$└─model$~~~~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~$│$~~~~~~$└─模型-The model                              
-$~~~~~~~~$│$~~~~~~$$~~~~~~$└─Lenet_summary.txt$~~~~$│$~~~~~$$~~~~~~~$└─模型结构参数-The model detail and parameter of model                          
-$~~~~~~~~$│$~~~~~~$$~~~~~~$└─lenet.pth $~~~~~~~~~~~~~~~~~$│$~~~~~$$~~~~~~~$└─预训练模型-Pre-train the model      
-$~~~~~~~~$│$~~~~~~$$~~~~~~$└─model.py  $~~~~~~~~~~~~~~~~~$│$~~~~~$$~~~~~~~$└─代码模型-The python code of model      
-$~~~~~~~~$│$~~~~~~$└─train.py $~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~$│$~~~~~~$└─训练文件-The code of train                                   
-$~~~~~~~~$│$~~~~~~$└─utils.py $~~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~$│$~~~~~~$└─实用函数代码-The code of some useful function                                   
-$~~~~~~~~$│$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$│           
-$~~~~~~~~$├─images$~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~$├─论文图片-The important images of paper                       
-$~~~~~~~~$│$~~~~~~$└─Lenet-1.png$~~~$$~~~~~~~~$$~~~~~~~~$$~$│$~~~~~~$└─论文中的图片-The images of paper                                           
-$~~~~~~~~$│$~~~~~~$└─Lenet-5.png$~~~$$~~~~~~~~$$~~~~~~~~$$~$│$~~~~~~$└─论文中的图片-The images of paper                            
-$~~~~~~~~$│$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$│               
-$~~~~~~~~$├─paper$~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~$├─论文-The origion paper of model                       
-$~~~~~~~~$│$~~~~~~$└─LeNet-1.pdf$~~~$$~~~~~~~~$$~~~~~~~~$$~$│$~~~~~~$└─论文中的-The images of paper                       
-$~~~~~~~~$│$~~~~~~$└─LeNet-5.pdf$~~~$$~~~~~~~~$$~~~~~~~~$$~$│$~~~~~~$└─论文中的图片-The images of paper                              
-$~~~~~~~~$│$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$│                                                 
-$~~~~~~~~$├─README.md$~~~~$$~~~~$$~~~~~$$~~~~~~~$$~~~~~~~$├─论文介绍-The introduction of paper   
-$~~~~~~~~$│$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$$~~~~~~~~$│   
+$====================================================$ 
+
+LeNet5 &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    模型名字-The name of model 
+
+│ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      &nbsp;  │
+
+├─code &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;     ├─模型代码-The code of model 
+
+ │ &nbsp;      &nbsp; 
+ └─datasets &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   │ &nbsp;  &nbsp;  &nbsp;    └─模型数据集-The datasets of model 
+ 
+│ &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; └─mnist_data\  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp; │ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    &nbsp; └─数据集-The datasets
+ 
+ │ &nbsp;    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; └─datasets.py &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    &nbsp;  &nbsp; └─加载数据代码-The code of loading datasets  
+ 
+ │ &nbsp;    &nbsp; └─model &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp; │ &nbsp;  &nbsp;  &nbsp;   └─模型-The model
+ 
+ │ &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; └─Lenet_summary.txt &nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; │ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  └─模型结构参数-The model detail and parameter of model  
+ 
+ │ &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; └─lenet.pth  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; │ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp; └─预训练模型-Pre-train the model      
+ 
+ │ &nbsp;    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; └─model.py   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; │ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  └─代码模型-The python code of model       
+ 
+ │ &nbsp;    &nbsp; └─train.py  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; │ &nbsp;  &nbsp;  &nbsp;   └─训练文件-The code of train                                
+ 
+ │ &nbsp;    &nbsp; └─utils.py  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; │ &nbsp;  &nbsp;  &nbsp;   └─实用函数代码-The code of some useful function          
+ 
+│ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      &nbsp;  │          
+ 
+ ├─images &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    ├─论文图片-The important images of paper                       
+ 
+ │ &nbsp;   &nbsp; └─Lenet-1.png &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; │ &nbsp;  &nbsp;  &nbsp;  └─论文中的图片-The images of paper   
+ 
+ │ &nbsp;   &nbsp; └─Lenet-5.png &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; │ &nbsp;  &nbsp;  &nbsp;└─论文中的图片-The images of paper                            
+ 
+│ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      &nbsp;  │               
+ 
+ ├─paper &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   ├─论文-The origion paper of model                        
+ 
+ │ &nbsp;  &nbsp; └─LeNet-1.pdf &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; │ &nbsp;  &nbsp;  &nbsp;  └─论文-The  paper            
+ 
+ │ &nbsp;  &nbsp; └─LeNet-5.pdf &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; │ &nbsp;  &nbsp;  &nbsp;  └─论文-The  paper                               
+ 
+│ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      &nbsp;  │                                               
+ 
+ ├─README.md &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  ├─论文介绍-The introduction of paper   
+
+│ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      &nbsp;  │
+
 $=====================================================$    
 
 
